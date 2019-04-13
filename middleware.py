@@ -7,12 +7,11 @@ app = Flask(__name__)
 @app.route('/mid/<name>', methods = ['GET','POST'])
 def main(name):
 
-    caixa, concat =  requests.post("http://127.0.0.1:5001/%s" % (name)), requests.post("http://127.0.0.1:5002/%s" % (name))
+    caixa =  requests.post("http://localhost:5001/%s" % (name))
     
     return jsonify({
     	"Entrada": caixa.json()['enviado'],
         "Caixa Alta":  caixa.json()['resposta'],
-        "Concatenado": concat.json()['resposta']
     })
 
 if __name__ == '__main__':
