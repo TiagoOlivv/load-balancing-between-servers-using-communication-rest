@@ -1,11 +1,9 @@
-# Load-Balancing-between-Servers
+# Load Balancing between Servers using communication Rest
  software that counts words
 
-•	Ideia Geral: Implementar um SD com balanceamento de carga do tipo dinâmico
-•	Requisito Funcional do Sistema: Software de CONTA PALAVRAS. Deve ser um texto grande que requer alto processamento.
-•	Recursos Físicos: Smartphone, computador 01, computador 02, computador 03.
-•	Arquitetura: O smartphone é um cliente que está conectado ao computador 01 (middleware), que por sua vez está conectado a dois servidores (computador 02 e 03).
-•	Modo de Demostração: O cliente requisita um serviço e o middleware encaminha a requisição a um dos servidores baseando-se na disponibilidade e no nível de consumo de CPU. O resultado é retornado para o cliente pelo middleware.
-•	Comunicação: Os serviços nos servidores serão providos por uma interface RESTful 
-•	Apresentação das Informações: Fazer a GUI apenas para o cliente (tela de entrada e reposta da requisição)
-•	Postar no SIGAA apenas o link para o projeto no git-hub. Não esquecer de descrever o trabalo na página do git-hub
+•	Ideia Geral: Implementar um SD com balanceamento de carga do tipo dinâmico. <br>
+•	Requisito Funcional do Sistema: Software de CONTA PALAVRAS. Deve ser um texto grande que requer alto processamento. <br>
+•	Recursos Físicos: Smartphone, computador 01, computador 02, computador 03.  <br>
+•	Arquitetura: O smartphone é um cliente que está conectado ao computador 01 (middleware), que por sua vez está conectado a dois servidores (computador 02 e 03). <br>
+•	Modo de Demostração: O cliente requisita um serviço e o middleware encaminha a requisição a um dos servidores baseando-se na disponibilidade e no nível de consumo de CPU. O resultado é retornado para o cliente pelo middleware. <br>
+•	Comunicação: Os serviços nos servidores serão providos por uma interface REST <br>
