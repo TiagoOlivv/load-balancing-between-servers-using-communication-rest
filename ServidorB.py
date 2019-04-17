@@ -8,7 +8,7 @@ hostname = socket.gethostname()
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.bind(('localhost', 0))
 port = sock.getsockname()[1]
-sock.close()
+sock.close() 
 
 @app.route('/head/', methods=['HEAD','GET','POST'])
 def main():
@@ -37,4 +37,4 @@ def contar(str):
     return counts
 
 if __name__ == '__main__':
-	app.run(debug = True, host = socket.gethostbyname(hostname), port = 40001)
+    app.run(debug = True, host = socket.gethostbyname(hostname), port = 40002)
